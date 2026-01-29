@@ -1,0 +1,72 @@
+Problem 3.16: Two rigid massless rods PR and RQ are joined at R with a pin-joint.
+P and Q are resting on ground at P and Q respectively.
+A vertical force F acts on pin R as shown.
+
+Given:
+- PR = 5 m
+- RQ = 12 m
+- At θ = 90°, impending slip occurs simultaneously at points P and Q
+- When 0 < θ < 90°, the rods remain in static equilibrium due to Coulomb friction
+
+Find: The ratio (μQ/μP) rounded to two decimal places
+
+Step 1: Analyze the geometry at θ = 90°
+When θ = 90°, the configuration forms a right angle at R.
+Let's denote:
+- Angle at P = α
+- Angle at Q = β
+- At θ = 90°: α + β = 90°
+
+From geometry:
+tan α = RQ/PR = 12/5
+tan β = PR/RQ = 5/12
+
+Step 2: Set up equilibrium conditions
+For impending slip at both P and Q simultaneously:
+- Friction at P: fP = μP × NP (maximum friction)
+- Friction at Q: fQ = μQ × NQ (maximum friction)
+
+Step 3: Apply force equilibrium at point R
+Vertical equilibrium: NP sin α + NQ sin β = F
+Horizontal equilibrium: NP cos α = NQ cos β
+
+From horizontal equilibrium:
+NP/NQ = cos β/cos α
+
+Step 4: Apply moment equilibrium about point P
+Taking moments about P (counterclockwise positive):
+F × (PR cos α) = NQ × (PR sin α + RQ sin β) + fQ × RQ cos β
+
+Step 5: Apply moment equilibrium about point Q
+Taking moments about Q (counterclockwise positive):
+F × (RQ cos β) = NP × (PR sin α + RQ sin β) + fP × PR cos α
+
+Step 6: Use the impending slip condition
+At impending slip:
+fP = μP × NP
+fQ = μQ × NQ
+
+From the geometry and equilibrium conditions:
+μP × PR cos α = μQ × RQ cos β
+
+Therefore:
+μQ/μP = (PR cos α)/(RQ cos β)
+
+Step 7: Calculate the trigonometric values
+For the triangle with sides PR = 5, RQ = 12:
+Hypotenuse PQ = √(5² + 12²) = √(25 + 144) = √169 = 13 m
+
+cos α = PR/PQ = 5/13
+cos β = RQ/PQ = 12/13
+
+Step 8: Calculate the ratio
+μQ/μP = (PR × cos α)/(RQ × cos β)
+μQ/μP = (5 × 5/13)/(12 × 12/13)
+μQ/μP = (25/13)/(144/13)
+μQ/μP = 25/144
+μQ/μP = 0.17361...
+
+Rounding to two decimal places:
+μQ/μP = 0.17
+
+Final Answer: The ratio (μQ/μP) = 0.17
