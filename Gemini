@@ -1,0 +1,48 @@
+Step 1: Analyze the Geometry at Impending Slip
+At θ = 90°, the rods form a right-angled triangle PRQ at vertex R.
+Using the Pythagorean theorem, the distance PQ on the ground is:
+PQ = sqrt(5^2 + 12^2) = sqrt(25 + 144) = 13 m
+
+Step 2: Resolve Forces at Pin-Joint R
+The vertical force F is applied at R. This force is distributed as 
+compressive axial forces in rods PR (F_PR) and RQ (F_RQ).
+Since it is a right angle at R:
+F_PR = F * cos(angle at P) = F * (5/13)
+F_RQ = F * cos(angle at Q) = F * (12/13)
+Wait, a simpler way is using the angles: 
+sin(P) = 12/13, cos(P) = 5/13
+sin(Q) = 5/13, cos(Q) = 12/13
+
+Step 3: Calculate Normal Reactions (N) and Horizontal Forces (H)
+For Rod PR at point P:
+N_P = F_PR * sin(P) = (F * 5/13) * (12/13)  -- Vertically transmitted part
+H_P = F_PR * cos(P) = (F * 5/13) * (5/13)   -- Horizontally transmitted part
+
+For Rod RQ at point Q:
+N_Q = F_RQ * sin(Q) = (F * 12/13) * (5/13)
+H_Q = F_RQ * cos(Q) = (F * 12/13) * (12/13)
+
+Alternatively, by taking moments about Q and P for the whole system:
+N_P * 13 = F * 12  => N_P = (12/13)F
+N_Q * 13 = F * 5   => N_Q = (5/13)F
+
+Step 4: Equilibrium of Horizontal Forces
+The horizontal thrust (T) pushing outwards at P and Q must be equal:
+T = N_P * tan(90-P) = N_P * (5/12) = (12/13)F * (5/12) = (5/13)F
+Check at Q: T = N_Q * tan(90-Q) = N_Q * (12/5) = (5/13)F * (12/5) = (12/13)F
+Correction: The horizontal force at each point is H = F * (sinα cosα) 
+where α is the angle with the vertical.
+H = F * ( (5/13) * (12/13) ) = (60/169)F (This is same for both P and Q)
+
+Step 5: Apply Friction Law (f = μN) at Impending Slip
+At P: μ_P * N_P = H  => μ_P * (12/13)F = (60/169)F
+μ_P = (60/169) * (13/12) = 5/13
+
+At Q: μ_Q * N_Q = H  => μ_Q * (5/13)F = (60/169)F
+μ_Q = (60/169) * (13/5) = 12/13
+
+Step 6: Calculate the Ratio
+Ratio = μ_Q / μ_P
+Ratio = (12/13) / (5/13)
+Ratio = 12 / 5
+Ratio = 2.40
