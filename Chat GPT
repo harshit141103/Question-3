@@ -1,0 +1,110 @@
+Given:
+Two rigid massless rods PR and RQ
+Length PR = 5 m
+Length RQ = 12 m
+R is a frictionless pin joint
+P and Q are on rough horizontal ground
+A vertical force F acts downward at R
+At θ = 90°, impending slip occurs simultaneously at P and Q
+
+Let:
+Coefficient of friction at P = μ_P
+Coefficient of friction at Q = μ_Q
+
+--------------------------------------------------
+STEP 1: Geometry at θ = 90°
+
+At θ = 90°, the two rods PR and RQ are perpendicular at R.
+
+Rod PR is inclined leftwards and touches ground at P  
+Rod RQ is inclined rightwards and touches ground at Q
+
+--------------------------------------------------
+STEP 2: Nature of forces at P and Q
+
+At impending slip:
+Friction force = limiting friction
+
+At P:
+F_P = μ_P × N_P
+
+At Q:
+F_Q = μ_Q × N_Q
+
+Normal reactions at P and Q are vertical.
+Friction forces act horizontally (opposing motion).
+
+--------------------------------------------------
+STEP 3: Consider equilibrium of joint R
+
+Since rods are massless and R is a pin joint,
+forces in rods PR and RQ act along their lengths.
+
+Let:
+Force in rod PR = T₁
+Force in rod RQ = T₂
+
+--------------------------------------------------
+STEP 4: Resolve forces at joint R
+
+At R:
+Vertical equilibrium:
+T₁ sin(θ₁) + T₂ sin(θ₂) = F
+
+Horizontal equilibrium:
+T₁ cos(θ₁) = T₂ cos(θ₂)
+
+At θ = 90° between rods:
+Angle rod PR makes with horizontal:
+tan θ₁ = (12 / 5)
+⇒ sin θ₁ = 12 / 13
+⇒ cos θ₁ = 5 / 13
+
+Angle rod RQ makes with horizontal:
+tan θ₂ = (5 / 12)
+⇒ sin θ₂ = 5 / 13
+⇒ cos θ₂ = 12 / 13
+
+--------------------------------------------------
+STEP 5: Horizontal equilibrium at R
+
+T₁ cos θ₁ = T₂ cos θ₂
+
+T₁ (5/13) = T₂ (12/13)
+⇒ T₁ / T₂ = 12 / 5
+
+--------------------------------------------------
+STEP 6: Forces transmitted to ground
+
+At P:
+Horizontal force = T₁ cos θ₁ = T₁ (5/13)
+Normal reaction N_P = T₁ sin θ₁ = T₁ (12/13)
+
+At Q:
+Horizontal force = T₂ cos θ₂ = T₂ (12/13)
+Normal reaction N_Q = T₂ sin θ₂ = T₂ (5/13)
+
+--------------------------------------------------
+STEP 7: Apply limiting friction condition
+
+At P:
+μ_P = (Horizontal force) / (Normal force)
+μ_P = [T₁ (5/13)] / [T₁ (12/13)]
+μ_P = 5 / 12
+
+At Q:
+μ_Q = [T₂ (12/13)] / [T₂ (5/13)]
+μ_Q = 12 / 5
+
+--------------------------------------------------
+STEP 8: Required ratio
+
+μ_Q / μ_P = (12/5) / (5/12)
+μ_Q / μ_P = (12 × 12) / (5 × 5)
+μ_Q / μ_P = 144 / 25
+μ_Q / μ_P = 5.76
+
+--------------------------------------------------
+FINAL ANSWER:
+
+μ_Q / μ_P = 5.76
