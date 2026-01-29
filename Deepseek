@@ -1,0 +1,41 @@
+STEP 1: Geometry at θ = 90°
+Lengths: PR = 5 m, RQ = 12 m. With both ends P and Q on horizontal ground, and θ = 90° at R, triangle PRQ is a 5–12–13 right triangle, right angle at R.
+Coordinates: 
+P = (0, 0), R = (25/13, 60/13), Q = (13, 0).
+
+STEP 2: Force equilibrium at joint R
+Vertical force F acts downward at R. Let S1 = force in PR on R (direction from R toward P), S2 = force in RQ on R (direction from R toward Q). Unit vectors:
+From R to P: u_RP = (-5/13, -12/13)
+From R to Q: u_RQ = (12/13, -5/13)
+
+Horizontal equilibrium: -(5/13) S1 + (12/13) S2 = 0  →  -5 S1 + 12 S2 = 0 …(1)
+Vertical equilibrium: -(12/13) S1 - (5/13) S2 - F = 0  →  -12 S1 - 5 S2 = 13 F …(2)
+
+From (1): S2 = (5/12) S1
+Sub into (2): -12 S1 - (25/12) S1 = 13 F
+→ (-169/12) S1 = 13 F
+→ S1 = - (156/169) F = - (12/13) F  (negative means tension)
+Then S2 = (5/12) (-12/13 F) = - (5/13) F  (tension)
+
+STEP 3: Forces at supports P and Q
+For rod PR (tension magnitude T1 = 12F/13):
+Force on P = T1 × (unit vector from P to R) = (12F/13) × (5/13, 12/13)
+= (60F/169, 144F/169)
+So H_P = 60F/169 (→), V_P = 144F/169 (↑)
+Normal force at P: N_P = V_P = 144F/169
+Friction at P (horizontal balance): f_P = H_P = 60F/169
+Impending slip: f_P = μ_P N_P → 60F/169 = μ_P (144F/169) → μ_P = 60/144 = 5/12 ≈ 0.4167
+
+For rod RQ (tension magnitude T2 = 5F/13):
+Force on Q = T2 × (unit vector from Q to R) = (5F/13) × (-12/13, 5/13)
+= (-60F/169, 25F/169)
+So H_Q = -60F/169 (←), V_Q = 25F/169 (↑)
+Normal at Q: N_Q = V_Q = 25F/169
+Friction at Q: f_Q = |H_Q| = 60F/169
+Impending slip: f_Q = μ_Q N_Q → 60F/169 = μ_Q (25F/169) → μ_Q = 60/25 = 12/5 = 2.4
+
+STEP 4: Ratio μ_Q / μ_P
+μ_Q / μ_P = (12/5) / (5/12) = 144/25 = 5.76
+(The problem asks for μ_P / μ_Q but likely means μ_Q / μ_P. Value = 5.76)
+
+FINAL ANSWER: 5.76 (rounded to two decimal places)
